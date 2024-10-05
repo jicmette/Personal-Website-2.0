@@ -1,0 +1,16 @@
+@import url("main.css");
+
+@media (min-width: 36em) and (max-width: 62.37em) {
+  #large-view-nav {
+    display: none;
+  }
+
+  #portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  
+}

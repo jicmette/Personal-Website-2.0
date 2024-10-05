@@ -1,0 +1,138 @@
+/* HTML Selectors */
+body {
+    font-family: 'Kalam', cursive;
+}
+
+div {
+    margin: 10px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+h1 {
+    margin: 10px;
+}
+
+footer {
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
+
+header {
+    margin: auto;
+    text-align: center;
+}
+
+img {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
+}
+
+label {
+    display: inline-block;
+    font-size: 20px;
+    min-width: 120px;
+    text-align: right;
+    background-color: black; 
+    color: white; 
+    text-align: center; 
+    border-radius: 5px;
+}
+
+label:hover {
+    background-color: #ffc107;
+    color: black;
+    border-radius: 5px;
+    border: 2px;
+    border-color: black;
+}
+
+main {
+    text-align: center;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li:first-child {
+    display: block;
+}
+
+nav ul li {
+    display: none;
+    list-style: none;
+    margin: 10px;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    background-color: #efefef;
+    color: black;
+}
+
+/* Class Selectors */
+.active {
+    background-color: white;
+    color: black;
+}
+
+.class 
+
+.open li {
+    display: block;
+}
+
+/* ID Selectors */
+
+#libraryResults {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* Media Queries */
+@media only screen and (min-width: 32.5em) {
+    nav ul {
+        flex-direction: row;
+    }
+    
+    nav ul li:first-child {
+        display: none;
+    }
+
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+
+    #libraryResults {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 64em) {
+    #libraryResults {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

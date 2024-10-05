@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/normalize.css"/>
+    <link rel="stylesheet" href="styles/main.css"/>
+    <link rel="stylesheet" href="styles/medium.css"/>
+    <link rel="stylesheet" href="styles/large.css"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <h2>
+        <a id="logo" href="index.html"> IC </a>
+      </h2>
+
+      <button id="theme-switch">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+        >
+          <path
+            d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
+          />
+        </svg>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="24px"
+          viewBox="0 -960 960 960"
+          width="24px"
+        >
+          <path
+            d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Z"
+          />
+        </svg>
+      </button>
+
+      <div id="large-view-nav">
+        <a class="active" href="portfolio.html">Portfolio</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        
+      </div>
+
+      <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+          >&times;</a
+        >
+        <div class="overlay-content">
+          <a href="portfolio.html">Portfolio</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <span id="ham-nav" onclick="openNav()">&#9776;</span>
+    </header>
+      
+    <main>
+      <h1 id="greathone">Portfolio.</h1>
+      <p>These are some of my projects, check them out!</p>
+      
+
+      <div id="portfolio-grid">
+        <div class="portfolioContainer">
+          <a href="https://jicmette.github.io/zen-garden-projectg2/" target="_blank"><h2>CSS Zen Garden Project</h2></a>
+          <p>This project showcases my ability to transform a basic HTML structure into a visually stunning design using CSS and SASS. Inspired by the <a href="https://csszengarden.com/" target="_blank">CSS Zen Garden</a>challenge, I crafted a unique and captivating webpage.</p>
+          <h3>BRIGHAM YOUNG UNIVERSITY - IDAHO PROJECT</h3>
+          <a href="https://jicmette.github.io/zen-garden-projectg2/" target="_blank">
+            <img id="imgfirst" src="images/CSS-zen-garden.jpg" alt="CSS Zen Garden">
+          </a>
+        </div>
+
+        <div class="portfolioContainer">
+          <a href="https://www.nexbitek.com/" target="_blank"><h2>Nexbitek, IT Services</h2></a>
+          <p>Built with HTML, CSS, and JavaScript, this project established the initial framework for the Nexbitek website. It served as a learning ground for developing a solid understanding of web development fundamentals.</p>
+          <h3>PERSONAL PROJECT</h3>
+          <a href="https://www.nexbitek.com/" target="_blank">
+            <img id="imgfirst" src="images/Nexbitek.png" alt="Nexbitek Logo">
+          </a>
+        </div>
+  
+        <div class="portfolioContainer">
+          <a href="portfolio/starwarsapi/starwarsapi.html" target="_blank"><h2>Star Wars API</h2></a>
+          <p>This project demonstrates my ability to create interactive web experiences using the <a href="https://swapi.dev/" target="_blank">Star Wars API</a>. By fetching and displaying real-world data, I showcased my proficiency in JavaScript and web development.</p>
+          <h3>BRIGHAM YOUNG UNIVERSITY - IDAHO PROJECT</h3>
+          <a href="portfolio/starwarsapi/starwarsapi.html" target="_blank">
+            <img id="imgsnd" src="portfolio/starwarsapi/images/starwarsimg.jpg" alt="Star Wars Project">
+          </a>
+        </div>
+          
+        <div class="portfolioContainer">
+          <a href="https://jicmette.github.io/wdd230/chamber/index.html" target="_blank"><h2>Chamber of Commerce Saltillo</h2></a>
+          <p>By combining HTML, CSS, and JavaScript, along with a personal JSON file and the <a href="https://openweathermap.org/" target="_blank">Open Wheather API</a>, I created a tool providing accurate and timely weather information for this website.</p>
+          <h3>BRIGHAM YOUNG UNIVERSITY - IDAHO PROJECT</h3>
+          <a href="https://jicmette.github.io/wdd230/chamber/index.html" target="_blank">
+            <img id="imgsnd" src="images/chamber-of-commerce-logo-saltillo.webp" alt="Chamber of Commerce Saltillo Logo">
+          </a>
+        </div>
+  
+        <div class="portfolioContainer">
+          <a href="https://jicmette.github.io/wdd230/bountiful-foods/index.html" target="_blank"><h2>Bountiful Foods</h2></a>
+          <p>This website showcases my web development skills using HTML, CSS, and JavaScript. Integrated with the <a href="https://openweathermap.org/" target="_blank">Open Wheather API</a>, the site offers real-time weather data, enhancing user experience.</p>
+          <h3>BRIGHAM YOUNG UNIVERSITY - IDAHO PROJECT</h3>
+          <a id="aimgfourth" href="https://jicmette.github.io/wdd230/bountiful-foods/index.html" target="_blank">
+            <img id="imgfourth" src="images/bountiful-logo.webp" alt="Bountiful Foods Logo">
+          </a>
+        </div>
+  
+        <div class="portfolioContainer">
+          <a href="https://jicmette.github.io/WDD-130-Web-Fundamentals/wwr/index.html" target="_blank"><h2>White Water Rafting Website</h2></a>
+          <p>This project represents my initial foray into web design and development. Using HTML and CSS, I created a basic website for a white water rafting company. This project allowed me to develop fundamental web development skills and establish a foundation for future projects.</p>
+          <h3>BRIGHAM YOUNG UNIVERSITY - IDAHO PROJECT</h3>
+          <a id="aimgfifth" href="https://jicmette.github.io/WDD-130-Web-Fundamentals/wwr/index.html" target="_blank">
+            <img id="imgfifth" src="images/logo.png" alt="White Water Rafting Logo">
+          </a>
+        </div>
+        
+      </div>
+ 
+    </main>
+
+    <footer>
+      <div class="contact">
+        <a href="https://github.com/jicmette" target="blank">
+          <img
+            class="imgfoot"
+            src="images/github-mark-white.png"
+            alt="GitHub"
+          />
+          <img
+            class="imgfoot"
+            src="images/github-mark-black.png"
+            alt="GitHub"
+          />
+        </a>
+
+        <a href="https://www.linkedin.com/in/israelcarmona/" target="blank">
+          <img class="imgfoot" src="images/LI-In-Bugwhite.png" alt="linkedin" />
+          <img class="imgfoot" src="images/LI-In-Bugblack.png" alt="linkedin" />
+        </a>
+
+        <a href="mailto:hello@israelcarmona.dev" target="blank">
+          <img
+            class="imgfoot"
+            src="images/Email-Symbol-PNG-File.png"
+            alt="Email"
+          />
+
+          <img
+            class="imgfoot"
+            src="images/Email-Symbol-PNG-black.png"
+            alt="Email"
+          />
+        </a>
+
+      </div>
+      <p class="pfoot">Designed and built by Israel Carmona</p>
+      <p class="pfoot">&copy; <span class="currentYear"></span></p>
+    </footer>
+    
+  </div>
+
+    <script src="scripts/scripts.js"></script>
+
+  </body>
+</html>
